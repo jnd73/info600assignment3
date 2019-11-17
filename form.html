@@ -5,12 +5,14 @@
     <title>Student Record Management</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
+
 <h1>Student Record Management</h1>
 
-<form id="inputs">
+<form id="inputs" enctype="multipart/form-data">
 <div>
   <label for="fullName">Full Name</label>
   <input type="text" name="fullName" id="fullName" />
@@ -27,7 +29,8 @@
 </div>
 
 <div id="buttonParent">
-<input type="button" value="Add Record" id="addRec" />
+<input type="button" value="Add Record" id="addRec" /><br>
+<input type="button" value="Load data" id="loadData" /><br>
 </div>
 </form>
 
